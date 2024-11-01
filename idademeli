@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Idade</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button.yes {
+            background-color: #4CAF50;
+        }
+        .button.yes:hover {
+            background-color: #45a049;
+        }
+        .button.no {
+            background-color: #f44336;
+        }
+        .button.no:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Você tem 18 anos ou mais?</h1>
+    <div class="buttons">
+        <a href="https://www.mercadolivre.com.br/pack-12-lumi-vinho-frisante-branco-suave-269ml/p/MLB35995806#polycard_client=search-nordic&wid=MLB3670463327&sid=search&searchVariation=MLB35995806&position=3&search_layout=stack&type=product&tracking_id=b70fe78d-61ea-420c-a023-8dae52c6fd57" class="button yes">Sim, tenho 18 anos ou mais</a>
+        <button class="button no" onclick="alert('Você precisa ter 18 anos ou mais para acessar este conteúdo.')">Não</button>
+    </div>
+</div>
+
+</body>
+</html>
